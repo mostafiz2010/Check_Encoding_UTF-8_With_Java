@@ -87,17 +87,9 @@ public class CheckEncoding {
 		return builder.toString();
 	}
 	
-	/**
-	 * Execute from CheckEncoding.class to the package: de.ianus.ingest.core.processEngine.ms;
-	 * 
-	 */
-//	public static List<String> execute(InformationPackage ip) throws Exception{
-//		return scanFileFolderNameEncoding(ip.getAbsolutePath());
-//	}
-	
 	// Execute from main method using local folder value
 	public static void main (String ...args) throws Exception{
-		List<String> wrongEncodingList = scanFileFolderNameEncoding("../Desktop/test");
+		List<String> wrongEncodingList = scanFileFolderNameEncoding("/Users/mr/Desktop/test");
 		for(String eco : wrongEncodingList){
 			System.out.println(eco.toString());
 		}
